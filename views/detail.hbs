@@ -1,0 +1,39 @@
+<div class="ootd-detail-container">
+    <div class="picture">
+        <img src='/images/{{ootd.picture}}'>
+    </div>
+
+    <div class="details">
+
+        <div class="titleContainer">
+            <h1>{{ootd.title}}</h1>
+        </div>
+        
+        <div class="detailContainer">
+            <p>Author: {{ootd.author}}</p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            
+            {{#if ootd.comments.length}}
+                <ul>
+                    {{#each ootd.comments as |comment|}}
+                        <li>
+                            <p><strong>{{comment.author}}</strong>: {{comment.text}}</p>
+                            <p class="comment-date">{{comment.createdAt}}</p>
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p>No comments yet.</p>
+            {{/if}}
+
+            <form method="POST" action="/addComment/{{ootd._id}}" class="ootd-form">
+                <label for="commentText">Add a Comment:</label>
+                <textarea id="commentText" name="commentText" rows="4" cols="50" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </div>
+    </div>
+</div>

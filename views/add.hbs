@@ -1,0 +1,13 @@
+{{#if error}}
+<div style = "color:red">{{error}}</div>
+{{/if}}
+
+<form method="POST" action="" enctype="multipart/form-data" class="ootd-form">
+    <h2>ADD OOTD</h2>
+        <br>
+        TITLE: <input type="text" name="title" value="" required><br>
+        BRANDS: <input type="text" name="brands" value="" required><br>
+        IMAGE: <input type="file" name="image" required><br>
+        DESCRIPTION: <input type ="text" name="description" value="" class="description"><br>
+        <input type="submit">
+</form>

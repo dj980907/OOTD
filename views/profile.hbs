@@ -1,0 +1,23 @@
+{{#if userOOTD.length}}
+    <div class="ootd-grid">
+        {{#each userOOTD as |ootd index|}}
+            <div class="ootd-item">
+                <img src='/images/{{ootd.picture}}'>
+                <p>Title: {{ootd.title}}</p>
+                <p>Author: {{ootd.author}}</p>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p>No OOTDs yet.</p>
+{{/if}}
+
+<div class="button-container">
+    <a href="/add">
+        <button type="button">ADD OOTD</button>
+    </a>
+
+    <a href="/delete">
+        <button type="button">DELETE OOTD</button>
+    </a>
+</div>

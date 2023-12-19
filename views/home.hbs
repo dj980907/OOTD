@@ -1,0 +1,16 @@
+{{#if allOOTDs.length}}
+    <div class="ootd-grid">
+        {{#each allOOTDs as |ootd index|}}
+            <div class="ootd-item">
+                <a href="/ootd/{{ootd._id}}">
+                    <img src='images/{{ootd.picture}}'>
+                </a>
+                <p>Title: {{ootd.title}}</p>
+                <p>Author: {{ootd.author}}</p>
+            </div>
+        {{/each}}
+    </div>
+{{else}}
+    <p>No OOTDs yet.</p>
+{{/if}}
+

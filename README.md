@@ -74,10 +74,6 @@ Comment Model:
 }
 ```
 
-## [Link to Commented First Draft Schema](db.mjs) 
-
-This is a link to my db.mjs that contains my schemas: [db.mjs](db.mjs)
-
 
 ## Wireframes
 
@@ -105,10 +101,6 @@ This is a link to my db.mjs that contains my schemas: [db.mjs](db.mjs)
 - Fit Detail Page: Detail of each OOTD
   ![Fit Detail Page](documentation/ootdPage.png)
 
-## Site map
-
-![list](documentation/sitemap-1.png)
-
 ## Unit Test
 ![list](documentation/testing.png)
 
@@ -124,31 +116,5 @@ This is a link to my db.mjs that contains my schemas: [db.mjs](db.mjs)
 8. As a user, I can like and save OOTDs that I find inspiring or interesting to my profile for future reference.
 9. As a user, I can follow other users to stay updated on their latest OOTD posts and get fashion inspiration from my favorite influencers.
 10. As a user, I can edit or delete an OOTD that I've shared if I want to make changes or remove it from my profile.
-
-## Research Topics
-
-* (3 points) Integrate user authentication
-    * I have implemented passport for user authentication
-    * I have provided registration and login pages.
-* (3 points) Unit testing with JavaScript
-    * I have implemented unit testing using Jest and Supertest.
-* (3 points) Image uploads
-    * I have used multer to upload pictures for the OOTDs
-* (1 points) Configuration management
-    * I used dotenv for configuration
-
-10 points total out of 10 required points
-
-
-## [Link to Initial Main Project File](app.mjs) 
-
-This is the link to my app.mjs with skeleton code: [app.mjs](app.mjs)
-
-## Annotations / References Used
-
-* Multer: https://www.youtube.com/watch?v=wIOpe8S2Mk8
-* Bcrypt: https://www.npmjs.com/package/bcrypt
-* Passport: https://www.youtube.com/watch?v=F-sFp_AvHc8
-* Unit Test: https://www.youtube.com/watch?v=r5L1XRZaCR0
 
 
